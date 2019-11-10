@@ -1,4 +1,4 @@
-package Singleton;
+package com.example.threaddemo.Singleton;
 
 public class singleton {
 
