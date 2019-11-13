@@ -14,7 +14,7 @@ public class Lock_ReadWrite {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    rw.set(++sum);
+                    rw.set(sum++);
                 }
             }, "Write:").start();
         }
