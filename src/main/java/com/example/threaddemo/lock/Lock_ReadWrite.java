@@ -9,6 +9,7 @@ public class Lock_ReadWrite {
     //读写锁
     static int sum = 1;
     public static void main(String[] args) {
+        //高位读锁  低位写锁
         ReadWriteLockDemo rw = new ReadWriteLockDemo();
         for (int k = 0; k < 10; k++ ) {
             new Thread(new Runnable() {
