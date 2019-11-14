@@ -12,6 +12,6 @@ public class CountDownLaunchSample {
         new Thread(new QueueTask(countDownLatch)).start();
         //等待线程池中的2个任务执行完毕，否则一直
         countDownLatch.await();
-        System.out.println("over，回家 cost:"+(System.currentTimeMillis()-now));
+        System.out.println("看完医生回家吃饭, 时间:"+(System.currentTimeMillis()-now));
     }
 }
