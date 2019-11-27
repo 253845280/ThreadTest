@@ -12,17 +12,17 @@ public class Executor_Single {
 
 
         /*ExecutorService exec = Executors.newSingleThreadExecutor();
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i <11; i++) {
             exec.execute(new Runnable() {//execute方法接收Runnable对象，无返回值
                 @Override
                 public void run() {
                     System.out.println("first:" +Thread.currentThread().getName());
-                    Integer.valueOf("aa");
+                    //Integer.valueOf("123");
                 }
             });
         }*/
 
-        /*ExecutorService exec =   new ThreadPoolExecutor(1, 1,
+        ExecutorService exec =   new ThreadPoolExecutor(1, 1,
                 0L, TimeUnit.MILLISECONDS,
                 new LinkedBlockingQueue<Runnable>(5));
         for (;;) {
@@ -37,7 +37,7 @@ public class Executor_Single {
                     System.out.println("first:" +Thread.currentThread().getName());
                 }
             });
-        }*/
+        }
 
 
 
