@@ -16,6 +16,7 @@ public class CyclicBarrierTest implements Runnable {
         try {
             System.out.println("index: " + index);
             index--;
+            Thread.sleep(1000);
             cyclicBarrier.await();
         } catch (Exception e) {
             e.printStackTrace();
